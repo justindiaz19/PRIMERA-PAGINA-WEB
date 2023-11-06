@@ -1,0 +1,46 @@
+body {
+    background-color: #FFD1DC;
+    text-align: center;
+    transition: background-color 2s ease; /* Cambio de fondo suave */
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+#collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+#collage img {
+    margin: 5px;
+    width: 150px;
+    border: 2px solid #FF69B4;
+    border-radius: 10px;
+}
+
+#dedicatoria {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    animation: colorchange 5s infinite;
+    text-shadow: 1px 1px 3px #FF69B4;
+    color: #FF1493;
+}
+
+/* Estilos para el confeti */
+.confetti {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    0% { top: 0; transform: rotate(0deg); }
+    100% { top: 100vh; transform: rotate(360deg); }
+}
